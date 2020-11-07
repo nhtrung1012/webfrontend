@@ -53,6 +53,7 @@ body{
 .detail{
     background-color: black;
     width: 200px;
+
 }
 .detail p{
     color: #ffffff;
@@ -61,4 +62,11 @@ body{
     text-transform: uppercase;
     padding: 20px 0px ;
     margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.detail p:hover{
+    text-decoration: underline;
 }
