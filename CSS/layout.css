@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #222222;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: #222222;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    float: none;
+}
+.header{
+    background-color: #ffffff;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 30px 0px;
+}
+.header .logo{
+    float: left;
+}
+.top-link{
+    float: right;
+}
+.logo a{
+    font-size: 25px;
+    line-height: 1;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.top-link li{
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+    color: #222222;
+}
+.top-link li a{
+    line-height: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+.logo p{
+    float: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.nav{
+    background-color: #ffffff;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    color: #222222;
+}
+.menu li.last{
+    float: right;
+    margin-right: 0;
+    color: #222222;
+    font-weight: 700;
+}
+.menu li a{
+    color: #222222;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.main{
+    margin-top: 25px;
+}
+.content{
+    float: left;
+    width: 66.67%;
+    padding-right:15px ;
+}
+.slidebar{
+    float: left;
+    width: 33.33%;
+    padding-left: 15px;
+}
+.post{
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px;
+}
+.block{
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.subcrive{
+    background-color: #222222;
+}
+.post h1{
+    margin-top: 25px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+}
+.post p{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.post p a{
+    color: red;
+}
+.post img{
+    height: 400px;
+}
+.subcrive h2{
+    margin-top: 25px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.subcrive p{
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.text{
+    text-transform: capitalize;
+    text-indent:10px;
+    font-size: 15px;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.button{
+    background-color: red;
+    color: white;
+    border: 1px solid #ff0000;
+    font-size: 20px;
+}
+.search{
+    outline: none;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: 1px solid #cacaca;
+}
+.block img{
+    height: 200px;
+}
+.icon{
+    float: left;
+    padding: 15px;
+    background-color: #eeeeee;
+}
+.boxicon{
+    float:left ;
+    padding: 10px 5px;
+    width: 20%;
+}
