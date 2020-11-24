@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng quay</title>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/fontawsome5.15.1/css/all.css">
+    <link rel="stylesheet" href="CSS/vongquay.css">
+</head>
+<body>
+    <section class="section col-md-12">
+        <div class="container ">
+            <p class="col-md-12 text-center" id="muiten"><i class="fas fa-arrow-down"></i></p>
+            <img class="col-md-6 col-md-offset-3" id="nt" src="imgs/vongquay.png"/>
+        </div>
+        <script type="text/javascript">
+            var t;
+            do{
+                t=parseInt(prompt("nhap so may man"))
+            }while (isNaN(t)||t<=0)
+            function xoay(){
+                t+=5;
+                var rd=parseInt(Math.random()*100)
+                var x=document.getElementById("nt");
+                x.style.transform = "rotate("+t+"deg)";
+                if (t>=360*rd){
+                    clearInterval(ss);
+                }
+            }
+            var ss=setInterval(xoay,20)
+        </script>
+    </section>
+</body>
+</html>

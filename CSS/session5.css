@@ -1,0 +1,26 @@
+/*input[type="text"]{*/
+/*    width: 200px;*/
+/*    height: 35px;*/
+/*    color: red;*/
+/*    text-align: center;*/
+/*}*/
+/*input[type="email"]{*/
+/*    width: 200px;*/
+/*    height: 35px;*/
+/*    color: black;*/
+/*    text-align: center;*/
+.form-group{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.ip-text{
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid black;
+}
+.ip-text:focus{
+    border: 1px solid blue;
+}

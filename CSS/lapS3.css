@@ -1,12 +1,15 @@
 body{
-    width: 1000px;
+    font-family: 'Roboto', sans-serif;;
 }
-div{
+#box{
     width: 1000px;
     background-color: #ffffff;
     float: left;
     box-shadow: 0px 0px 5px;
     border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: calc(50% - 500px);
 }
 img{
     width: 120px;
@@ -19,19 +22,21 @@ img{
     width: 1000px;
     height: 120px;
     background-color: #e0e0e0;
-    text-align: center;
     box-shadow: none;
+    padding-left: 340px;
+    box-sizing: border-box;
 }
 #top h1{
     text-transform: uppercase;
-    padding: 1px;
-    margin: 20px 0px 2px 0px;
+    padding-top:  20px;
+    margin: 0px 0px 2px 0px;
 }
 #top p{
     text-transform: uppercase;
     font-size: 20px;
     padding: 1px;
     margin:0px;
+    font-weight: 400px;
 }
 #left{
     float: left;
@@ -92,4 +97,8 @@ img{
 }
 #right p{
     margin: 0px 0px 20px 0px;
+    line-height: 1.5;
+}
+.title{
+    color: #cf0f0f;
 }

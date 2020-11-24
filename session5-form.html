@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form demo</title>
+    <link rel="stylesheet" href="CSS/session5.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input class="ip-text" name="fullname" required type="text" placeholder="Full Name"/>
+            <!--        tên, kiểu nhập liệu,chữ hiện ban đầu-->
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input class="ip-text" name="email" required type="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+             <input class="ip-text" name="password" required type="password" placeholder="password" />
+        </div>
+        <div class="form-group">
+            <label>Sinh nhật</label>
+             <input class="ip-text" name="birthday" type="date" placeholder="birthday.." />
+        </div>
+        <div class="form-group">
+            <label>Màu</label>
+            <input class="ip-text"  name="mycolor" type="color" placeholder="My color"/><br/>
+        </div>
+
+        <label><input type="radio" checked name="gender" value="nam"/>Nam</label>
+        <label><input type="radio" name="gender" value="nu"/>Nữ</label>
+<!--        thẻ label dùng để ấn vào chữ cũng hiện trên radio-->
+        <label> <input type="checkbox" checked name="ready"/>I'm ready</label>
+
+<!--        nhóm select bộ thẻ lựa chọn-->
+        <select name="city">
+            <option>Vui lòng chọn tỉnh thành phố</option>
+            <option value="hn">Hà Nội</option>
+            <option value="sg">Sài Gòn</option>
+            <option value="hp">Hải Phòng</option>
+            <option value="ct">Cần Thơ</option>
+        </select>
+        <br/>
+<!--        nhóm textarea sử dụng khi cần điền nhiều-->
+        <textarea name="dessciption" rows="10" cols="100" placeholder="Mô tả bản thân.."></textarea>
+        <br/>
+        <button type="submit">Submit</button>
+<!--        xác nhận gửi thông tin đi-->
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+    </form>
+</body>
+</html>

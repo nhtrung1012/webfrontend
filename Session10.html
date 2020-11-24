@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 10</title>
+</head>
+<body>
+    <h1 id="head1">Tiêu đề trang</h1>
+    <p id="p1">Tương tự chiến dịch tranh cử khác thường do ảnh hưởng của Covid-19, lễ nhậm chức của Tổng thống đắc cử Joe Biden được cho là sẽ không giống bất kỳ buổi lễ tuyên thệ nào của lãnh đạo nước Mỹ trong lịch sử hiện đại. Một số đề xuất đã được nêu trong các cuộc thảo luận bao
+        gồm yêu cầu những người tham dự đeo khẩu trang, duy trì giãn cách xã hội, hay xét nghiệm nCoV cho những người dự kiến tiếp xúc gần với Biden </p>
+
+    <img id="nt" src="imgs/hinh-nen-may-tinh-don-gian.jpg" height="365" width="650"/>
+    <script type="text/javascript">
+        function demo(){
+            var h = document.getElementById("head1");
+            h.innerText = "Tiêu đề sau khi chỉnh sửa"; //thay đổi chữ trong phàn tử
+            var pp = document.getElementById("p1");
+            pp.style.color = "red" ;                    // thay đổi màu săc
+            pp.style.fontSize = "20px";   //thay đổi cỡ chữ
+            var text = pp.innerText;    //trả về thông tin trong đoạn văn
+            pp.innerHTML = "<span>"+text+"</span>"; //thay đổi cấu trúc html
+            pp.classList.add("abc");  //trả về 1 mảng array, thêm class
+            pp.classList.remove("xyz"); // xóa 1 class
+        }
+            setTimeout(demo,3000);
+            var f = true
+            var t=0;
+            function Img(){
+                var x = document.getElementById("nt");
+                // if (f){
+                //     x.style.display = "block";
+                //     f = false;
+                // }else {
+                //     x.style.display = "none";
+                //     f = true;
+                // }
+
+                t+=5;
+                x.style.transform = "rotate("+t+"deg)";
+                if (t>=360*5)
+                    clearInterval(ss);
+            }
+           var ss= setInterval(Img,10);
+    </script>
+</body>
+</html>

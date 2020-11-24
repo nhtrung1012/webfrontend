@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // code js viết ở đây
+        var x;
+        var y=5;
+        x = 10;
+        console.log(x+y); // 15
+        x = "hello";
+        console.log(x+y); //hello5
+        var z ;
+        z= "hello " + "world" +'hahaha';
+        console.log(z);
+        console.log("Do dai cua z = " +z.length);
+        if(z.length >20){
+            console.log("z da vuot qua gioi han cho phep");
+        }else {
+            console.log("van chua vuot qua gioi han")
+        }
+        for (var i=0;i<z.length;i++){
+            console.log("i= "+i);
+        }
+        var arr = [];//khai báo mảng
+        arr[0] =5;
+        arr[2] ='hello';
+        arr.push(15);
+        arr.push('xin chao');// cách đưa giái trị vào cuối cùng
+       // arr.push([1,2,3]); // mang không giới hạn chiều sâu
+        for (var i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.map((e)=>{
+            //e cũng giống arr[i]
+            console.log(e);
+        })
+        x = tinhtong(4,5);
+        function tinhtong(a,b){
+            return a+b;
+        }
+        console.log(x);
+        x = tinhtong(4,"hello")
+        console.log(x);
+        function timsolonnhat(a){
+            var max = a[0];
+            a.map((e)=>{
+                if (e> max)
+                    max =e;
+            })
+        }
+        var arr2 = [1,2,3,4,5,6];
+        if (arr2.includes(4))
+    </script>
+    <script type="text/javascript" src="JS/session9-JS.js">
+        //không được viết code hs ở đây
+    </script>
+</body>
+</html>

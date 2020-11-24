@@ -1,0 +1,25 @@
+body{
+    text-align: right;
+    width: 800px;
+    font-size: 20px;
+}
+h4{
+    text-align: left;
+    border-top: 1px solid red;
+    color: red;
+    text-decoration: underline;
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-size: 30px;
+    font-style: italic;
+}
+img{
+    width: 150px;
+    height:200px;
+}
+p{
+
+    text-align: left;
+    font-size:20px;
+    width: 800px;
+}

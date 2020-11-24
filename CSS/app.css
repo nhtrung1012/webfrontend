@@ -1,0 +1,33 @@
+body{
+    background-image:url("../imgs/hinh-nen-may-tinh-don-gian.jpg");
+    background-repeat: no-repeat;
+    /*no-repeat , repeat x, repeat */
+    background-size: cover;
+}
+h1{
+    color: #ff0000; /* rgb(255,0,0) red */
+    font-size: 50px; /* cỡ chữ */
+    font-family: Arial; /* font chữ */
+    line-height: 1.5; /* độ cao dòng */
+    text-align: center; /* căn lề */ /* left center right justify căn đều */
+    text-decoration: underline;
+    /* gạch chân, gạch giữa, gạch trên, bỏ gạch */ /* underline , line-through, overline, none*/
+    text-transform: uppercase;
+    /*in hoa, in thường, chữ cái đầu tiên viết hoa */ /*uppercase, lowercase, capitalize,none*/
+    /*border: 1px solid green; !*tạo khung viền*!*/
+    /*solid dotted dashed*/
+    border-top: 2px solid blue;
+}
+p{
+    text-align: center ;
+    color: blue;
+    font-weight: 700; /* chữ in đậm ,bold,độ dầy của chữ */
+    text-indent: 50px; /* tạo khoảng cách đầu dòng*/
+    width: 600px;/*kích thước khối chữ*/
+    background-color: aqua;/*màu nền phía sau*/
+}
+img{
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+}

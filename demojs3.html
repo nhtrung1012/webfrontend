@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo JS3</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // var  n = 0;
+        // function canhbao() {
+        //     n++
+        //     alert("xin chao");
+        //     if (n>2){
+        //         clearInterval( it );
+        //     }
+        // }
+        // //setTimeout(canhbao,1000s);
+        // var it=setInterval(canhbao,1000);
+        var  min=10,sec=0;
+        function canhbao() {
+            // var min_txt = min;
+            // if (min<10){
+            //     min_txt = "0"+min
+            // }
+            var min_txt =min<10?"0"+min:min;
+            var sec_txt =sec<10?"0"+sec:sec;
+            console.log(min_txt+":"+sec_txt);
+            sec--;
+            if (sec<0){
+                sec=59;
+                min--;
+            }
+            if (min<0){
+                clearInterval(it);
+            }
+        }
+        //setTimeout(canhbao,1000s);
+        var it = setInterval(canhbao,100);
+    </script>
+</body>
+</html>

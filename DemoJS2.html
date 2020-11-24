@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // alert("cam tre em duoi 18 tuoi"); //voild hàm cảnh báo không trả kết quả
+        // var c = confirm('ban chac chan muon vao xem');//boolean trả kết quả true/false
+        // if (c){
+        //     //nếu người dùng đồng ý
+        //     console.log("ok men");
+        // }else {
+        //     //nếu người dùng không đồng ý
+        //     console.log("bai bai");
+        // }
+        // var p = prompt("bạn tên là gì?"); //string or null
+        // p = parseInt(p);// chuyển string thành int
+        /*
+        5->5
+        5a->5
+        5a6->5
+         */
+        // if (isNaN(p)){
+        //     console.log("Error")
+        // }else {
+        //     console.log(p);
+        // }
+        // var rd = parseInt(Math.random()*100); //0<=rd<100
+        // var luckynumber = prompt("Nhap số may man");
+        // if (luckynumber == rd){
+        //     alert("chuc mung ban da trung giai");
+        // }else {
+        //     alert("chuc ban may man lan sau");
+        // }
+        //ngẫu nhiên từ 0-45
+        // var vl = [];
+        // do {
+        //      var n = parseInt(Math.random()*46);
+        //      if (!vl.includes(n)){
+        //          vl.push(n);
+        //      }
+        // }while (vl.length<5);
+        // console.log(vl);
+        // var ln =[];
+        // do {
+        //     var n= prompt("nhap so");
+        //     n = parseInt(n);
+        //     if (!isNaN(n) && n>=0 && n<=45 && !ln.includes(n)){
+        //         ln.push(n);
+        //     }
+        // }while (ln.length<5);
+        // var count = 0;
+        // ln.map((e)=>{
+        //     if (vl.includes(e)){
+        //         count++;
+        //     }
+        // })
+        // if (count == 5){
+        //     alert("chúc mừng bạn đã trúng Vietlot")
+        // }else {
+        //     alert("chúc bạn may mắn lần sau");
+        // }
+        var vl =[];
+        do{
+            var n =  parseInt(Math.random()*46);
+            if(!vl.includes(n)){
+                vl.push(n);
+            }
+        }while (vl.length<5);
+        console.log(vl);
+        // chon 5 so 0-45
+        var ln = [];
+        do {
+            var n = prompt("Chon 1 so:");
+            n = parseInt(n);
+            if(!isNaN(n) && n>=0 && n<=45 && !ln.includes(n)){
+                ln.push(n);
+            }
+        }while (ln.length<5);
+        var count = 0;
+        ln.map((e)=>{
+            if(vl.includes(e)){
+                count++;
+            }
+        });
+        if(count==5 ){
+            alert("chuc mung ban da trung 100 ty");
+        }
+    </script>
+</body>
+</html>

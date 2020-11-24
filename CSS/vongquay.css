@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 512px;
+    border-radius: 100%;
+}
+p{
+    font-size: 50px;
+    margin-bottom: 0px;
+}

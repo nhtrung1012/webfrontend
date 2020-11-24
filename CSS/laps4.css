@@ -1,3 +1,8 @@
+/**{ !* cài đặt cho tất cả phần tử trong web*!*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
 body{
     font-family: 'Merriweather', serif;
 }

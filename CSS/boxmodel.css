@@ -1,0 +1,81 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+div{
+    background-color: white;
+    float: left;/* dồn khối, left, right, none*/
+    width: 300px;
+
+    /*border: 1px solid black;*/
+    margin: 20px 10px 15px 10px;
+    /*khoảng cách giữa các khối, có thể viết theo chiều kim đồng hồ, nếu chiều nào không có
+    thì lấy theo chiều đối diện*/
+    /*margin-bottom: 10px;*/
+    /*margin-top: 10px;*/
+    padding: 10px 20px;/*khoảng cách từ nội dung đến boder*/
+    /*nguyên tắc giống margin*/
+    box-sizing: border-box;/*kích cỡ khối tính từ đường boder đi vào*/
+    /*content-box kích cỡ khối là kích cỡ nội dung, không tính boder và padding,mặc định
+    của trình duyệt*/
+    box-shadow: 0px 0px 5px red;/*rộng, dài, độ rộng bóng, màu của bóng*/
+    border-radius: 5px;/*cắt các góc của khối*/
+}
+img{
+    max-width: 100%;
+}
+span{ /*tạo hình tròn hoặc elip*/
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border-radius: 100%;
+    transition: all 300ms;/*làm các hiệu ứng trong hover chạy theo thời gian*/
+    animation: den_giao_thong2;
+    animation-duration: 3s;/*thời gian thực hiện*/
+    animation-iteration-count: infinite;/*số lần thực hiện, chạy mãi mãi*/
+    animation-delay: 2s;
+
+}
+span:hover{ /*thay đổi trạng thái của span*/
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+@keyframes den_giao_thong { /*bộ key chuyển động*/
+    from {
+        background-color: red;
+        width: 300px;
+    }
+    to{
+        background-color: green;
+        width: 500px;
+    }
+
+}
+@keyframes den_giao_thong2 {
+    0%{
+        width: 300px;
+    }
+    20%{
+        width: 400px;
+    }
+    40%{
+        width: 500px;
+    }
+    60%{
+        width: 400px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+#em{ /*viết cho thể có id la em*/
+    background-color: #9696ff;
+}
+#em p{ /*viết cho thể p trong id là em*/
+    color: #cf0f0f;
+}
+#em:hover p{ /*chỉnh khi vừa đưa chuột vào khối*/
+    color: black;
+    /*margin-top: -5px;*/
+}
