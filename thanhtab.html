@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab</title>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/fontawsome5.15.1/css/all.css">
+    <link rel="stylesheet" href="CSS/tab.css">
+</head>
+<body>
+    <nav class="nav text-center">
+        <button type="button" onclick="goiham1();colsepopup2();colsepopup3();colsepopup4()">Home</button>
+        <button type="button" onclick="goiham2();colsepopup1();colsepopup3();colsepopup4()">Profile</button>
+        <button type="button" onclick="goiham3();colsepopup1();colsepopup2();colsepopup4()">Messenges</button>
+        <button type="button" onclick="goiham4();colsepopup1();colsepopup2();colsepopup3()">Setting</button>
+    </nav>
+    <section class="main col-md-12">
+        <div id="popup">
+            <div class="box" >
+                <input id="popup1" name="text" type="text" placeholder="This is home content">
+            </div>
+            <div class="box" >
+                <input id="popup2" name="text" type="text" placeholder="This is profile content">
+            </div>
+            <div class="box">
+                <input id="popup3" name="text" type="text" placeholder="This is messenge content">
+            </div>
+            <div class="box">
+                <input id="popup4" name="text" type="text" placeholder="This is setting content">
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function goiham1(){
+            document.getElementById("popup1").style.display = "block"
+        }
+        function goiham2(){
+            document.getElementById("popup2").style.display = "block"
+        }
+        function goiham3(){
+            document.getElementById("popup3").style.display = "block"
+        }
+        function goiham4(){
+            document.getElementById("popup4").style.display = "block"
+        }
+        function colsepopup1(){
+            document.getElementById("popup1").style.display="none"
+        }
+        function colsepopup2(){
+            document.getElementById("popup2").style.display="none"
+        }
+        function colsepopup3(){
+            document.getElementById("popup3").style.display="none"
+        }
+        function colsepopup4(){
+            document.getElementById("popup4").style.display="none"
+        }
+    </script>
+</body>
+</html>

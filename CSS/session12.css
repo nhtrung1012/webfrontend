@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #222222;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #222222;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    float: none;
+}
+.header{
+    background-color: #ffffff;
+    border-bottom: dotted 1px #fcbbbb;
+}
+.logo{
+    margin-top: 2%;
+}
+.topleft{
+    float: left;
+}
+.list h1{
+    font-size: 15px;
+    color: #000000;
+    padding: 20px;
+    font-weight: bold;
+    margin-left: -70%;
+    width: 50%;
+}
+.topright{
+    float: right;
+    padding: 20px;
+}
+.language select{
+    float: right;
+    width: 50%;
+    border: none;
+    box-shadow: 0 0 1px;
+    margin-right: -50%;
+    border-radius: 5px;
+    height: 20px;
+}
+.dowload div{
+    float: right;
+    background-color: red;
+    width: 50%;
+    box-shadow: 0px 0px 1px;
+    border: 1px solid red;
+    color: #ffffff;
+    border-radius: 5px;
+    height: 25px;
+}
+.icon{
+    float: right;
+    margin-top: 3%;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px;
+    list-style: none;
+    margin-left: 50px;
+}
+.main{
+    margin-top: 5%;
+}
+.anh img{
+    float: right;
+    padding-top: 5%;
+}
+.back{
+    float: right;
+    width: 80px;
+    height: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 2px;
+}
+.back a{
+    text-align: center;
+    font-size: 15px;
+    float: right;
+}
+.price{
+    color: red;
+    font-size: 40px;
+    border-bottom: 1px dotted #b7aeae;
+    padding: 20px;
+}
+.qua{
+    margin-top: 4%;
+}
+.sl{
+    border: 1px solid #b8b8b8;
+    width: 20%;
+    margin-top: 3%;
+    padding: 0px;
+}
+
+.add{
+    float: left;
+    margin-top: 5%;
+    background-color: greenyellow;
+    height: 40px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 5px;
+    color: #ac0101;
+}
+.footer{
+    margin-top: 5%;
+    background-color: #fff3e0;
+    padding: 10px;
+}
+input{
+    text-indent: 5px;
+    width: 100%;
+    height: 40px;
+}
+.copy{
+    background-color: #ffe7c2;
+    padding-top: 15px;
+}
+Eve

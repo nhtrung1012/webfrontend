@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+    <h1 onmouseenter="demo2()" id="heading" onmouseleave="demo3()">tiêu đề</h1>
+    <button type="button" onclick="demo1(this)">Click here</button>
+    <button type="button" onclick="demo1(this)">Click here</button>
+    <script type="text/javascript">
+        function demo1(e){
+            var h= document.getElementById("heading");
+            h.style.color = "red";
+            e.style.backgroundColor = "orange";
+        }
+        function demo2(){
+            console.log("BBBB.....");
+        }
+        function demo3(){
+            console.log("CCCCCC....");
+        }
+    </script>
+    <input name="name" onkeypress="textPress3(this)" onkeydown="textPress1(this)" onkeyup="textPress2(this)" type="text" placeholder="Enter world ..."/>
+    <script type="text/javascript">
+        function textPress1(e){
+            // var x=e.value;
+            // console.log("VALUE: "+x);
+        }
+        function textPress2(e){
+            // var x=e.value;
+            // console.log("Keyup: "+x);
+        }
+        function textPress3(e){
+            if (event.keyCode==13){
+                var x= e.value;
+                console.log("VALUE: "+x);
+            }
+        }
+        function textPress4(){
+            console.log("Textt444");
+        }
+    </script>
+    <select onchange="changeCity(this)" name="city">
+        <option value="hn">Hà Nội</option>
+        <option value="sg">Sài Gòn</option>
+        <option value="ct">Cần Thơ</option>
+        <option value="dn">Đà Nẵng</option>
+    </select>
+    <script type="text/javascript">
+        function changeCity(e){
+            var x  =e.value;
+            console.log("Change: "+x);
+        }
+    </script>
+    <select name="mycolor" onchange="changeColor(this)">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+    </select>
+    <script type="text/javascript">
+        function changeColor(e){
+            document.getElementById("heading").style.color = e.value;
+        }
+    </script>
+
+</body>
+</html>
