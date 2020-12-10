@@ -3,9 +3,8 @@
     list-style: none;
     width: 150px;
     height: 30px;
-    border: 1px solid black;
+    border: 1px solid white;
     background-color: #ffffff;
-    border: none;
 }
 .box input{
     position: absolute;
@@ -13,4 +12,11 @@
     width: 600px;
     height: 100px;
     display: none;
+    margin-top: -1px;
+}
+#popup1{
+    display: block;
+}
+button{
+    border-bottom: 1px solid white;
 }
