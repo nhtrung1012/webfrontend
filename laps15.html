@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>laps15</title>
+    <script src="libs/Jquery/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/laps15.css">
+    <link rel="stylesheet" href="libs/fontawsome5.15.1/css/all.css">
+</head>
+<body>
+    <nav class="col-md-2 nav">
+        <button type="button" onclick="hide()" class="col-md-2 hidenav div"><i class="fas fa-times"></i></button>
+        <div class="col-md-12 div text-uppercase">
+            <h4 class="text-uppercase"><a href="#">home</a> </h4>
+        </div>
+        <div class="col-md-12 div text-uppercase">
+            <h4 class="text-uppercase"><a href="#">service</a> </h4>
+        </div>
+        <div class="col-md-12 div text-uppercase">
+            <h4 class="text-uppercase"><a href="#">blog</a> </h4>
+        </div>
+        <div class="col-md-12 div text-uppercase">
+            <h4 class="text-uppercase"><a href="#">about</a> </h4>
+        </div>
+        <div class="col-md-12 div text-uppercase">
+            <h4 class="text-uppercase"><a href="#">contact</a> </h4>
+        </div>
+    </nav>
+    <section class="section col-md-10 content">
+        <div class="col-md-12 bar shownav" onclick="show()">
+            <div class="col-md-1"><i class="fas fa-bars"></i></div>
+            <div class="col-md-11 text-uppercase menu"><h3>menu</h3></div>
+        </div>
+        <div class="col-md-12 text-capitalize"><h1>Interactive Sliding Menu Demo</h1></div>
+    </section>
+    <script type="text/javascript">
+        function show(){
+            var s = $(".nav")
+            var h = $(".content")
+            s.animate({
+                "width":"253px",
+                "height":"1200px"
+            },400)
+            h.animate({
+                "width":"1266px",
+                "height":"1200px"
+            },370)
+        }
+        function  hide(){
+            var s = $(".nav")
+            var h = $(".content")
+            s.animate({
+                "width":"0px",
+                "height":"1200px"
+            },400)
+            h.animate({
+                "width":"100%",
+                "height":"1200px"
+            })
+        }
+    </script>
+</body>
+</html>
